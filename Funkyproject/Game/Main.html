@@ -28,7 +28,7 @@
         </div>
         <input type = 'hidden' name = 'dRT' id="dRT">
         <input type = 'hidden' name = 'iDec' id="iDec">
-        <button ide = "next_button" style="display: none;"> </button>
+        <button id = "nextbut" style="display: none;"> </button>
     </div>
 
 {{ endblock }}
@@ -48,13 +48,13 @@
         tNow = new Date();
         console.log('Ends now: $(tNow)');
         let dRT = tNow - tStart;
-        let next_button = document.getElementById('next_button');
+        let nextbut = document.getElementById('nextbut');
         let inputDec = document.getElementById('iDec');
         let inputdRT = document.getElementById('dRT');
 
         inputDec.value = value;
         inputdRT.value = dRT;
-        next_button.click();
+        nextbut.click();
     }
 
 </script>
